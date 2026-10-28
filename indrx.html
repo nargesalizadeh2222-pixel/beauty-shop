@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beauty Shop</title>
+<style>
+body {
+    font-family: Tahoma, sans-serif;
+    background: #fff0f5;
+    text-align: center;
+    margin: 0;
+    color: #4a2035;
+}
+header {
+    background: #d94f87;
+    color: white;
+    padding: 25px;
+}
+h1 { margin: 0; }
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+}
+.card {
+    background: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #e6b5ca;
+}
+.icon { font-size: 55px; }
+.price {
+    color: #d94f87;
+    font-weight: bold;
+    font-size: 18px;
+}
+button {
+    background: #d94f87;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover { background: #a72e62; }
+footer {
+    background: #4a2035;
+    color: white;
+    padding: 15px;
+}
+</style>
+</head>
+<body><header>
+<h1>💗 BEAUTY SHOP 💗</h1>
+<p>زیبایی از اینجا شروع می‌شود!</p>
+</header><div class="products"><div class="card">
+<div class="icon">💄</div>
+<h3>رژ لب مخملی</h3>
+<p>رنگ‌بندی متنوع</p>
+<p class="price">۲۵۰٬۰۰۰ تومان</p>
+<button onclick="buy('رژ لب مخملی')">خرید محصول</button>
+</div><div class="card">
+<div class="icon">🧴</div>
+<h3>کرم آبرسان</h3>
+<p>مناسب استفاده روزانه</p>
+<p class="price">۳۸۰٬۰۰۰ تومان</p>
+<button onclick="buy('کرم آبرسان')">خرید محصول</button>
+</div><div class="card">
+<div class="icon">✨</div>
+<h3>ریمل حجم‌دهنده</h3>
+<p>حالت‌دهنده مژه</p>
+<p class="price">۱۹۰٬۰۰۰ تومان</p>
+<button onclick="buy('ریمل حجم‌دهنده')">خرید محصول</button>
+</div></div><footer>
+<p>Beauty Shop | فروشگاه زیبایی شما 💕</p>
+</footer><script>
+function buy(product) {
+    alert("شما " + product + " را انتخاب کردید!");
+}
+</script></body>
+</html>
